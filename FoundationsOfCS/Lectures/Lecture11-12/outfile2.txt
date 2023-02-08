@@ -1,0 +1,2 @@
+The sum of values in "infile2.txt" are: +10.00
+Yay, I got this to work!!
