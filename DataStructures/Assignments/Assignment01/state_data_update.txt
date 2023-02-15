@@ -1,0 +1,52 @@
+State Name: Alabama                  Population: 1111111
+State Name: Alaska                   Population: 710231
+State Name: Arizona                  Population: 6392017
+State Name: Arkansas                 Population: 2915918
+State Name: California               Population: 37253956
+State Name: Colorado                 Population: 5029196
+State Name: Connecticut              Population: 3574097
+State Name: Delaware                 Population: 897934
+State Name: District of Columbia     Population: 601723
+State Name: Florida                  Population: 99999999
+State Name: Georgia                  Population: 9687653
+State Name: Hawaii                   Population: 1360301
+State Name: Idaho                    Population: 1567582
+State Name: Illinois                 Population: 12830632
+State Name: Indiana                  Population: 6483802
+State Name: Iowa                     Population: 3046355
+State Name: Kansas                   Population: 2853118
+State Name: Kentucky                 Population: 4339367
+State Name: Louisiana                Population: 4533372
+State Name: Maine                    Population: 1328361
+State Name: Maryland                 Population: 5773552
+State Name: Massachusetts            Population: 6547629
+State Name: Michigan                 Population: 9883640
+State Name: Minnesota                Population: 5303925
+State Name: Mississippi              Population: 2967297
+State Name: Missouri                 Population: 5988927
+State Name: Montana                  Population: 989415
+State Name: Nebraska                 Population: 1826341
+State Name: Nevada                   Population: 2700551
+State Name: New Hampshire            Population: 1316470
+State Name: New Jersey               Population: 8791894
+State Name: New Mexico               Population: 2059179
+State Name: New York                 Population: 19378102
+State Name: North Carolina           Population: 9535483
+State Name: North Dakota             Population: 672591
+State Name: Ohio                     Population: 11536504
+State Name: Oklahoma                 Population: 3751351
+State Name: Oregon                   Population: 3831074
+State Name: Pennsylvania             Population: 12702379
+State Name: Puerto Rico              Population: 3725789
+State Name: Rhode Island             Population: 1052567
+State Name: South Carolina           Population: 4625364
+State Name: South Dakota             Population: 814180
+State Name: Tennessee                Population: 6346105
+State Name: Texas                    Population: 25145561
+State Name: Utah                     Population: 2763885
+State Name: Vermont                  Population: 625741
+State Name: Virginia                 Population: 8001024
+State Name: Washington               Population: 6724540
+State Name: West Virginia            Population: 1852994
+State Name: Wisconsin                Population: 5686986
+State Name: Wyoming                  Population: 222222
