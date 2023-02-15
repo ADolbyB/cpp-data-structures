@@ -1,7 +1,7 @@
 /***********************************PROGRAM HEADER*****************************************************************************************************
 Name: Joel Brigida             Email: j*******9@f**.edu                    TOTAL POINTS:  25                DUE DATE: Friday 01/22/2021
 COURSE: Data Structures COP 3530-001                                       Professor:  Dr. Bullard
-Assignment Name:  Assignment #1: Module 3
+Assignment Name:  Assignment #1
 Description:  This program manages a dynamic array of records.
 ******************************************************************************************************************************************************/
 

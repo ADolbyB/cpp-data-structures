@@ -23,12 +23,11 @@ double_size is called, which doubles the capacity of pop_DB.
 **********************************************************************************************************************************************************/
 state_class::state_class()
 {
-
     cout << "=>> Default Constructor Called <<=" << endl << endl;                   // Shows that the default constructor has been called.
 
-	count = 0;                                                                      // intially count, capacity, and pop_DB are initialized with the following values:
-	capacity = 5;
-	pop_DB = new population_record[capacity];                                       // declares a dynamic array
+    count = 0;                                                                      // intially count, capacity, and pop_DB are initialized with the following values:
+    capacity = 5;
+    pop_DB = new population_record[capacity];                                       // declares a dynamic array
 
     ifstream file_in;                                                               // declare fstream object to read data from file.
 
@@ -94,7 +93,6 @@ state_class::state_class()
     //cout << "=>> Default constructor ended <<=" << endl;                          // debug to know when the loop ends
 
     file_in.close();                                                                // close file when finished to avoid file corruption.
-
 }
 
 /******************************************************************************************************************************************************
@@ -105,7 +103,6 @@ Description: copy constructor: performs a deep copy of an object.
 ******************************************************************************************************************************************************/
 state_class::state_class(const state_class & org)
 {
-
     cout << "=>> Copy Constructor Called <<=" << endl;                              // Shows that the copy constructor has been called.
 
     count = org.count;                                                              // both statements make the copied object the same size as the original
@@ -117,7 +114,6 @@ state_class::state_class(const state_class & org)
         {
             pop_DB[i] = org.pop_DB[i];                                              // copies array values to the new dynamic array
         }
-
 }
 
 /******************************************************************************************************************************************************
@@ -128,13 +124,11 @@ Description: Destructor which de-allocates all memory allocated to the dynamic p
 ******************************************************************************************************************************************************/
 state_class::~state_class()
 {
-
     cout << "=>> Destructor has been called <<=" << endl;                           // Shows that the destructor has been called
 
     delete [] pop_DB;                                                               // deletes the array pop_DB[]
     pop_DB = 0;                                                                     // zeros out the pointer so its not "dangling"
     count = 0;                                                                      // set count to zero since there are no items in the array now
-
 }
 
 /******************************************************************************************************************************************************
@@ -161,7 +155,6 @@ void state_class::double_size()
             pop_DB = temp;                                                          // assign temp to pop_DB
 
         }
-
 }
 
 /******************************************************************************************************************************************************
@@ -181,7 +174,6 @@ void state_class::operator+(const population_record& r)
     pop_DB[count].state_name = r.state_name;                                        // appends the state name value to the list of array values
 
     count++;
-
 }
 
 /******************************************************************************************************************************************************
@@ -192,7 +184,6 @@ Description: Accessor Function: searches pop_DB for a state in pop_DB. If the st
 ******************************************************************************************************************************************************/
 int state_class::Search(const string& state)
 {
-
     for (int i = 0; i < count; i++)                                                 // loop cycles through the array indices
     {
         if(state == pop_DB[i].state_name)                                           // compare the value we want to match to the array values
@@ -202,7 +193,6 @@ int state_class::Search(const string& state)
 
     }
 	return -1;                                                                      // if loop ends, then string was not found and (-1) is returned
-
 }
 
 /******************************************************************************************************************************************************
@@ -213,7 +203,6 @@ Description: Mutator Function: Deletes a population record from pop_DB if the ke
 ******************************************************************************************************************************************************/
 void state_class::Remove(const string& state)
 {
-
     int goal;
     goal = Search(state);               // stores the index location of the state that we want to be removed by invoking the search function.
 
@@ -231,9 +220,7 @@ void state_class::Remove(const string& state)
                 }
 
             count--;
-
         }
-
 }
 
 /******************************************************************************************************************************************************
@@ -244,7 +231,6 @@ Description: Accessor Function: Prints all the fields of all the population reco
 ******************************************************************************************************************************************************/
 void state_class::Print_ALL_To_File(const string& filename)
 {
-
     ofstream fileout;                                                           // declare a local ofstream object to write to file
     fileout.open(filename);                                                     // open the file with the filename of the string object passed as a call-by-refernce
 
@@ -265,7 +251,6 @@ void state_class::Print_ALL_To_File(const string& filename)
         }
 
     fileout.close();                                                            // close file when done to avoid data corruption
-
 }
 
 
@@ -277,7 +262,6 @@ Description: Accessor Function: Prints the "State Name: " and "Population: " fie
 ******************************************************************************************************************************************************/
 void state_class::Print_ALL()
 {
-
     cout.setf(ios::left);                                                       // format the list as left justified
     cout.setf(ios::fixed);                                                      // fixed decimal notation (not e-notation)
     cout.precision(0);                                                          // show no decimal points
@@ -287,7 +271,6 @@ void state_class::Print_ALL()
             // outputs both state_name and population to the screen.
             cout << setw(12) << "State Name: " << setw(25) << pop_DB[i].state_name << "Population: " << pop_DB[i].population << endl;
         }
-
 }
 
 
@@ -311,9 +294,7 @@ void state_class::Print_Range(const int min, const int max)
                     // outputs both state_name and population to the screen.
                     cout << setw(12) << "State Name: " << setw(25) << pop_DB[i].state_name << "Population: " << pop_DB[i].population << endl;
                 }
-
         }
-
 }
 
 
@@ -335,9 +316,7 @@ int state_class::State_Count(const int min, const int max)
             {
                 state_count++;                                                  // adds to the count if the states population fits between the two parameters.
             }
-
     }
-
 	return state_count;
 }
 
