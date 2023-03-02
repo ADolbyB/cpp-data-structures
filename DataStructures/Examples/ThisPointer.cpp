@@ -25,8 +25,8 @@ class Container
 
 int main()
 {
-    Container Box1(3.3, 1.2, 1.5);                                  // Declare box1
-    Container Box2(8.5, 6.0, 2.0);                                  // Declare box2
+    Container Box1(3.3, 1.2, 1.5);                                  // Declare Container Object box1
+    Container Box2(8.5, 6.0, 2.0);                                  // Declare Container Object box2
 
     if(Box1.compare(Box2))
         {
@@ -61,6 +61,6 @@ double Container::Volume(void)
 int Container::compare(Container any_box)
 {
 
-    return (this->Volume() > any_box.Volume());                   // only member functions have a "this" pointer.
+    return (this->Volume() > any_box.Volume());                   // Calling object is this-> object.
 
 }
