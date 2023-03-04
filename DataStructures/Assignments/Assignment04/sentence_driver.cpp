@@ -17,13 +17,13 @@ int main()
 {
    	cout << "****Test#1: default constructor, length, and operator<<***\n\n";
 	sentence you;
-	cout<<"\""<< you << "\"" <<" : length = "<< you.length()<< endl;
-	cout<<"\n****End of Test#1*******************************************\n";
-	cout<<endl;
+	cout << "\"" << you << "\"" << " : length = " << you.length() << endl;
+	cout << "\n****End of Test#1*******************************************\n";
+	cout << endl;
 
 	cout << "****Test#2: explicit-value constructor, length, and operator<<***\n\n";
-	sentence me("Today is a wonderful day!   ");//sentence with 3 spaces at end
-	cout<< "me is " << "\"" << me << "\"" << " =  " << "\"" << "Today is a wonderful day!   " << "\"" << "\n";
+	sentence me("Today is a wonderful day!   "); //sentence with 3 spaces at end
+	cout << "me is " << "\"" << me << "\"" << " =  " << "\"" << "Today is a wonderful day!   " << "\"" << "\n";
 	cout << "The length of me is " << me.length() << "\n\n";
 	sentence me_to("");
 	cout << "me_to is " << "\"" << me_to << "\"" << " = " << "\"" << "\"" << "\n"; //sentence should be empty string
@@ -32,11 +32,11 @@ int main()
 	cout << "you_to is " << "\"" << you_to << "\"" << " =  "<<"\"" << " " << "\"" << "\n";//sentence is one space
 	cout << "The length of you_to is " << you_to.length() << "\n\n";
 	cout << "****End of Test#2*******************************************\n";
-	cout<<endl;
+	cout << endl;
 
 	cout << "****Test#3: copy constructor, length, isEqual, and operator<<***\n\n";
 	sentence them = me;
-	cout << "them is " << "\"" <<them<< "\"" << "\n";
+	cout << "them is " << "\"" << them << "\"" << "\n";
 	cout << "The length of me is " << me.length()
 	     << " = The length of them is " << them.length() << "\n";
 	cout << "isEqual should equal 1 = " << them.isEqual(me) << endl << endl;
@@ -48,11 +48,11 @@ int main()
 	us = "There are five racoons in the palm tree.";
 	cout << "Testing operator = by assigning the value of " <<
 		"\"" << "There are five racoons in the palm tree." << "\"" << "\n";
-	cout << "The sentence us is "<< "\"" << us << "\"" << endl << endl;
+	cout << "The sentence us is " << "\"" << us << "\"" << endl << endl;
 	cout << "****End of Test#4*********************************************\n";
 	cout << endl;
 
-	cout<<"****TEST#5: overloaded operator= with string, isEqual, and operator<<*********\n\n";
+	cout << "****TEST#5: overloaded operator= with string, isEqual, and operator<<*********\n\n";
 	sentence her, him;
 
 	her = "I am very happy";
@@ -94,8 +94,8 @@ int main()
 	cout << "us = " << "\"" << us << "\"" << " and length = " << us.length() << endl;
 	cout << "their = " << "\"" << their << "\"" << " and length = " << their.length() << endl;
 	us + their;
-	cout << "us followed by their is " << "\"" << us << "\"" <<" and length = " << us.length() << endl;
-	cout <<"*************************************************\n";
+	cout << "us followed by their is " << "\"" << us << "\"" << " and length = " << us.length() << endl;
+	cout << "*************************************************\n";
 	cout << endl << endl;
 
 	us = "123 456";
@@ -119,13 +119,13 @@ int main()
 	cout << "\"" << them << "\"" << " length of them = " << them.length() << endl;
 	them = "123";
 	them.remove("123");
-	cout << "\"" << them<< "\"" << " length of them = "<< them.length()<<endl;
+	cout << "\"" << them << "\"" << " length of them = " << them.length()<<endl;
 	them = "123 abc 124 abc 123 4567";
 	them.remove("123");
-	cout << "\"" <<them <<"\""<< " length of them = " << them.length() << endl;
+	cout << "\"" << them << "\""<< " length of them = " << them.length() << endl;
 	them = "123 abc 124 abc 123 4567";
 	them.remove("4567");
-	cout << "\"" << them <<"\"" " length of them = " << them.length() << endl;
+	cout << "\"" << them << "\"" " length of them = " << them.length() << endl;
 	them = "123 abc 124 abc 123 4567";
 	them.remove("124");
 	cout << "\"" << them << "\"" " length of them = " << them.length() << endl;
@@ -145,7 +145,7 @@ int main()
 	sentence h("123 456 780");
 	them = h;
 	cout << "right object = " << h << endl;
-	cout << "them = "<< them << endl << endl;
+	cout << "them = " << them << endl << endl;
 	cout << "****End of TEST#8****************************************\n\n";
 	cout << "****End of Program*********************************************\n";
 }
