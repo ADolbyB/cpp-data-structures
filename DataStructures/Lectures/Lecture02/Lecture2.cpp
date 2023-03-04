@@ -43,14 +43,11 @@ void overflow1(void)
             cout << number << endl;
             number *= 10;
         }
-
     cout << endl;
-
 }
 
 void overflow2(void)
 {
-
     cout << "OVERFLOW 2:" << endl << endl;
 
     int number = INT_MAX - 3;
@@ -63,14 +60,11 @@ void overflow2(void)
             cout << number << endl;
             number++;
         }
-
     cout << endl;
-
 }
 
 void overflow3(void)
 {
-
     cout << "OVERFLOW 3:" << endl << endl;
 
     int number = INT_MAX - 3;
@@ -80,14 +74,11 @@ void overflow3(void)
             cout << number << endl;
             number++;
         }
-
     cout << endl;
-
 }
 
 void pointers_addresses(void)
 {
-
     cout << "POINTERS:" << endl << endl;
 
     int i = 11, j = 22;
@@ -115,5 +106,4 @@ void pointers_addresses(void)
          << "value of j: " << *jPtr << endl             // "dereferences" the address of the pointer to the variable value
          << "value of d: " << *dPtr << endl
          << "value of e: " << *iPtr << endl << endl;
-
 }
