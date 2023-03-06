@@ -19,9 +19,9 @@ swapping of 2 variables of type 'new_type'
 template <class new_type>
 void xswap(new_type& x, new_type& y)
 {
-	new_type temp = x;
-	x = y;
-	y = temp;
+    new_type temp = x;
+    x = y;
+    y = temp;
 }
 
 /***********************************************************
@@ -48,22 +48,22 @@ int main()
     cout << "Is_Equal for integers: " << boolalpha << Is_Equal(x, y) << endl;
     cout << "Is_Equal for chars: " << boolalpha << Is_Equal(ch, sh) << endl << endl;
 
-	int i = 10;
-	int j = 20;
-	string a = "hello";
-	string b = "goodbye";
+    int i = 10;
+    int j = 20;
+    string a = "hello";
+    string b = "goodbye";
 
-	cout << "i and j before call " << "i = " << i << " and j = " << j << endl;
+    cout << "i and j before call " << "i = " << i << " and j = " << j << endl;
 
-	xswap(i, j); // swap 2 integers
+    xswap(i, j); // swap 2 integers
 
-	cout << "i and j after call " << "i = " << i << " and j = " << j << endl << endl;
+    cout << "i and j after call " << "i = " << i << " and j = " << j << endl << endl;
 
-	cout << "a and b before call " << "a = " << a << " and b = " << b << endl;
+    cout << "a and b before call " << "a = " << a << " and b = " << b << endl;
 
-	xswap(a, b); // swap 2 strings
+    xswap(a, b); // swap 2 strings
 
-	cout << "a and b after call " << "a = " << a << " and b = " << b << endl << endl;
+    cout << "a and b after call " << "a = " << a << " and b = " << b << endl << endl;
 
-	return 0;
+    return 0;
 }
