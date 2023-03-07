@@ -11,7 +11,7 @@
 
 using namespace std;
 
-void move(unsigned n, unsigned & moveNumber, char source, char destination, char spare);
+void move(unsigned n, unsigned& moveNumber, char source, char destination, char spare);
 
 int main()
 {
@@ -41,7 +41,7 @@ puzzle with 'n' number of disks.
 Precondition: None.
 Postcondition: A message describing the move is output to cout.
  ***********************************************************************/
-void move(unsigned n, unsigned & moveNumber, char source, char destination, char spare)
+void move(unsigned n, unsigned& moveNumber, char source, char destination, char spare)
 {
     if (n == 1)                                         // Anchor Case
         {
