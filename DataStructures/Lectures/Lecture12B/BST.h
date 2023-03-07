@@ -29,7 +29,7 @@
 
 using namespace std;
 
-template <typename DataType>
+template<typename DataType>
 class BST
 {
     public:
@@ -44,37 +44,31 @@ class BST
 
     private:
 
-        class BinNode // Nested Node Class
+        class BinNode // Nested Private Node Class
         {
             public:
 
                 DataType data;
-                BinNode *left;              // Pointer to Left Child
-                BinNode *right;             // Pointer to Right Child
-
-                // Default Node Constructor for Empty Node
-                BinNode() : left(0), right(0) {}
-
-                // Explicit Value Constructor: Inserts 'item'
-                BinNode(DataType item) : data(item), left(0), right(0) {}
+                BinNode *left;                          // Pointer to Left Child
+                BinNode *right;                         // Pointer to Right Child
+                BinNode() : left(0), right(0) {}        // Default Node Constructor for Empty Node
+                BinNode(DataType item) : data(item), left(0), right(0) {} // Explicit Value Constructor: Inserts 'item'
 
         };  // End BinNode Class Declaration
 
         typedef BinNode *BinNodePointer;
-
+        BinNodePointer myRoot;                          // Pointer to the Root Node
         // Private Member Function Prototype Declarations
         void search2(const DataType& item, bool& found, BinNodePointer& locptr, BinNodePointer& parent) const;
         void inorderAux(ostream& out, BST<DataType>::BinNodePointer subtreePtr) const;
         void graphAux(ostream& out, int indent, BST<DataType>::BinNodePointer subtreeRoot) const;
-        
-        BinNodePointer myRoot; // Private Data Member
 
 }; // end of class template declaration
 
 /******************************************************************
 Function Name: BST()
-Description: Default Constructor for BST Object. Constructs a 
-BST object.
+Description: Default Constructor for BST Object. Constructs an 
+empty Binary Search Tree with no nodes.
 Precondition: None.
 Postcondition: An empty BST has been constructed.
 ******************************************************************/
@@ -251,7 +245,7 @@ Note: inorder uses private auxiliary function inorderAux().
 template <typename DataType>
 inline void BST<DataType>::inorder(ostream& out) const
 {
-   inorderAux(out, myRoot);
+    inorderAux(out, myRoot);
 }
 
 /******************************************************************
@@ -269,7 +263,8 @@ inline void BST<DataType>::graph(ostream& out) const
 
 /******************************************************************
 Function Name: search2()
-Description: Locates a node containing item and its parent.
+Description: Private Helper Function: Locates a node containing 
+'item' and its parent.
 Precondition: None.
 Postcondition: locptr points to node containing item or is null if
 not found, and parent points to its parent.
@@ -302,7 +297,8 @@ void BST<DataType>::search2(const DataType& item, bool& found, BST<DataType>::Bi
 
 /*******************************************************************
 Function Name: inorderAux()
-Description: Performes Inorder traversal (auxiliary function.)
+Description: Private Helper Function: Performes Inorder traversal 
+of BST.
 Precondition: ostream out is open and subtreePtr points to a subtree
 of this BST.
 Postcondition: Subtree with root pointed to by subtreePtr has been
@@ -321,7 +317,7 @@ void BST<DataType>::inorderAux(ostream& out, BST<DataType>::BinNodePointer subtr
 
 /*******************************************************************
 Function Name: graphAux()
-Description: Graph auxiliary function.
+Description: Private Helper Function: Graphs auxiliary function.
 Precondition: ostream out is open & subtreePtr points to a subtree
 of this BST.
 Postcondition: Graphical representation of subtree with root pointed
